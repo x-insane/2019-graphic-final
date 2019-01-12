@@ -1,0 +1,54 @@
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    margin-top: 20px;
+}
+.images-container::after {
+    content: '';
+    flex-grow: 9999999;
+}
+.images-container .frame {
+    margin: 8px;
+}
+.images-container .frame .title {
+    text-align: center;
+    overflow-x: hidden;
+    margin-bottom: 8px;
+}
+.images-container .image {
+    background-color: lightblue;
+    position: relative;
+}
+.images-container .image i {
+    display: block;
+}
+.images-container .image img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.image-handler {
+    margin-bottom: 50px;
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-handler p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.image-handler img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    display: block;
+}
